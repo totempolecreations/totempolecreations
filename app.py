@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 app = Flask(__name__)
 app.secret_key = "totem_pole_creations_secret_key"
 
-@app.route('/sitemap.xml')
+@app.route("/sitemap.xml")
 def sitemap():
     pages = [
         'https://totempolecreations.in/',
