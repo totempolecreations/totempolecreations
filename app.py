@@ -3,6 +3,32 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 app = Flask(__name__)
 app.secret_key = "totem_pole_creations_secret_key"
 
+@app.route('/sitemap.xml')
+def sitemap():
+    pages = [
+        'https://totempolecreations.in/',
+        'https://totempolecreations.in/about',
+        'https://totempolecreations.in/services',
+        'https://totempolecreations.in/contact'
+        'https://totempolecreations.in/portfolio'
+        'https://totempolecreations.in/projects'
+        'https://totempolecreations.in/enquiry'
+    ]
+
+    xml = '<?xml version="1.0" encoding="UTF-8"?>'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+
+    for page in pages:
+        xml += f'''
+        <url>
+            <loc>{page}</loc>
+        </url>
+        '''
+
+    xml += '</urlset>'
+
+    return xml, 200, {'Content-Type': 'application/xml'}
+
 @app.route("/")
 def home():
     return render_template("index.html")
