@@ -5,7 +5,7 @@
 <style>
     /* Header Banner - Royal Blue Background */
     .portfolio-header-banner {
-        background-color: #003688 !important;
+        background-color: #003688 !important; /* Royal Blue Background */
         background: linear-gradient(135deg, #003688 0%, #002255 100%) !important;
     }
 
@@ -32,13 +32,13 @@
         position: relative;
         overflow: hidden;
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .portfolio-item:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
     .portfolio-img {
@@ -54,8 +54,11 @@
 
     .portfolio-overlay {
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0, 54, 136, 0.88);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 54, 136, 0.88); /* Royal Blue with opacity */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -106,7 +109,7 @@
     </div>
 
     <!-- ==================================================== -->
-    <!-- 1. OUTDOOR ADVERTISING SECTION (16 Individual Items) -->
+    <!-- 1. OUTDOOR ADVERTISING SECTION                       -->
     <!-- ==================================================== -->
     {% if request.args.get('category', 'outdoor') == 'outdoor' %}
     <div data-aos="fade-up">
@@ -117,8 +120,7 @@
         </div>
 
         <div class="row g-4">
-            
-            <!-- 1. Bill Board -->
+            <!-- Outdoor Item 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/billboard.png') }}" alt="Bill Board Advertisement" class="portfolio-img">
@@ -128,8 +130,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 2. Wallscape -->
+            <!-- Outdoor Item 2 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/wallscape.png') }}" alt="Wallscape Advertisement" class="portfolio-img">
@@ -139,8 +140,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 3. Roof Top -->
+            <!-- Outdoor Item 3 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/rooftop.png') }}" alt="Roof Top Advertisement" class="portfolio-img">
@@ -150,8 +150,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 4. Hoarding -->
+            <!-- Outdoor Item 4 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/hoarding.png') }}" alt="Hoarding Advertisement" class="portfolio-img">
@@ -161,8 +160,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 5. Totem Pole -->
+            <!-- Outdoor Item 5 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/SignBoard.png') }}" alt="Totem Pole Sign Board" class="portfolio-img">
@@ -172,8 +170,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 6. Traffic Signal Pole -->
+            <!-- Outdoor Item 6 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/Traffic.png') }}" alt="Traffic Signal Pole" class="portfolio-img">
@@ -183,8 +180,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 7. Walking Bill Board -->
+            <!-- Outdoor Item 7 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/WalkingBillBoard.png') }}" alt="Walking Bill Board" class="portfolio-img">
@@ -194,8 +190,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 8. Transport -->
+            <!-- Outdoor Item 8 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/Transport.png') }}" alt="Transport Advertisement" class="portfolio-img">
@@ -205,8 +200,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 9. Wall Painting -->
+            <!-- Outdoor Item 9 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/WallPainting.png') }}" alt="Wall Painting" class="portfolio-img">
@@ -216,8 +210,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 10. Barricade -->
+            <!-- Outdoor Item 10 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/Barricade.png') }}" alt="Barricade Advertisement" class="portfolio-img">
@@ -227,8 +220,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 11. Police Booth -->
+            <!-- Outdoor Item 11 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/PoliceBooth.png') }}" alt="Police Booth" class="portfolio-img">
@@ -238,8 +230,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 12. Lighting Board -->
+            <!-- Outdoor Item 12 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/LightingBoard.png') }}" alt="Lighting Board" class="portfolio-img">
@@ -249,8 +240,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 13. Bow Flags -->
+            <!-- Outdoor Item 13 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/BowFlags.png') }}" alt="Bow Flags" class="portfolio-img">
@@ -260,8 +250,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 14. Auto -->
+            <!-- Outdoor Item 14 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/Auto.png') }}" alt="Auto Advertisement" class="portfolio-img">
@@ -271,8 +260,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 15. Event Arch -->
+            <!-- Outdoor Item 15 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/EventArch.png') }}" alt="Event Arch" class="portfolio-img">
@@ -282,8 +270,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 16. Flyers / Posters / Newspaper -->
+            <!-- Outdoor Item 16 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/FlyersandPosters.png') }}" alt="Flyers and Posters" class="portfolio-img">
@@ -293,14 +280,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     {% endif %}
 
-    <!-- =================================================== -->
-    <!-- 2. INDOOR ADVERTISING SECTION (8 Individual Items)  -->
-    <!-- =================================================== -->
+    <!-- ==================================================== -->
+    <!-- 2. INDOOR ADVERTISING SECTION                       -->
+    <!-- ==================================================== -->
     {% if request.args.get('category') == 'indoor' %}
     <div data-aos="fade-up">
         <div class="text-center mb-4">
@@ -310,8 +296,7 @@
         </div>
 
         <div class="row g-4">
-            
-            <!-- 1. Corporate Needs -->
+            <!-- Indoor Item 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/corporateneeds.png') }}" alt="Corporate Needs" class="portfolio-img">
@@ -321,8 +306,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 2. Branding -->
+            <!-- Indoor Item 2 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/branding.png') }}" alt="Branding" class="portfolio-img">
@@ -332,8 +316,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 3. Television Commercial -->
+            <!-- Indoor Item 3 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/television.png') }}" alt="Television Commercial" class="portfolio-img">
@@ -343,8 +326,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 4. Photoshoot -->
+            <!-- Indoor Item 4 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/photoshoot.png') }}" alt="Photoshoot" class="portfolio-img">
@@ -354,8 +336,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 5. Printing -->
+            <!-- Indoor Item 5 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/printing.png') }}" alt="Printing" class="portfolio-img">
@@ -365,8 +346,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 6. Social Media Promotion -->
+            <!-- Indoor Item 6 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/media promotion.png') }}" alt="Social Media Promotion" class="portfolio-img">
@@ -376,8 +356,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 7. Graphic Designs -->
+            <!-- Indoor Item 7 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/graphic design.png') }}" alt="Graphic Designs" class="portfolio-img">
@@ -387,8 +366,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 8. Constructing Solution -->
+            <!-- Indoor Item 8 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/constructing.png') }}" alt="Constructing Solution" class="portfolio-img">
@@ -398,24 +376,22 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     {% endif %}
 
     <!-- ==================================================== -->
-    <!-- 3. COMPLETED PROJECTS SECTION (12 Individual Items) -->
+    <!-- 3. COMPLETED PROJECTS SECTION                        -->
     <!-- ==================================================== -->
     {% if request.args.get('category') == 'projects' %}
     <div data-aos="fade-up">
         <div class="text-center mb-4">
             <span class="badge bg-danger category-badge px-3 py-2 text-uppercase mb-2">Projects Gallery</span>
             <h3 class="fw-bold text-dark">Executed Structural & On-Site Projects</h3>
-            <p class="text-secondary">Showcasing 12 of our major completed installations & fabrications.</p>
+            <p class="text-secondary">Showcasing 15 of our major completed installations & fabrications.</p>
         </div>
 
         <div class="row g-4">
-            
             <!-- Project 1 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
@@ -427,128 +403,132 @@
                     </div>
                 </div>
             </div>
-
             <!-- Project 2 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/two.jpeg') }}" alt="Project 2" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 2</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 3 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/three.jpeg') }}" alt="Project 3" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 3</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 4 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/four.jpeg') }}" alt="Project 4" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 4</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 5 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/five.jpeg') }}" alt="Project 5" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 5</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 6 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/six.jpeg') }}" alt="Project 6" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 6</span>
-                       
                     </div>
                 </div>
             </div>
-
             <!-- Project 7 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/seven.jpeg') }}" alt="Project 7" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 7</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 8 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/eight.jpeg') }}" alt="Project 8" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 8</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 9 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/nine.jpeg') }}" alt="Project 9" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 9</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 10 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/ten.jpeg') }}" alt="Project 10" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 10</span>
-                       
                     </div>
                 </div>
             </div>
-
             <!-- Project 11 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/eleven.jpeg') }}" alt="Project 11" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 11</span>
-                        
                     </div>
                 </div>
             </div>
-
             <!-- Project 12 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="portfolio-item bg-white border">
                     <img src="{{ url_for('static', filename='images/twelve.jpeg') }}" alt="Project 12" class="portfolio-img">
                     <div class="portfolio-overlay text-white">
                         <span class="badge bg-danger mb-2">PROJECT 12</span>
-                        
                     </div>
                 </div>
             </div>
-
+            <!-- Project 13 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="portfolio-item bg-white border">
+                    <img src="{{ url_for('static', filename='images/thirteen.jpeg') }}" alt="Project 13" class="portfolio-img">
+                    <div class="portfolio-overlay text-white">
+                        <span class="badge bg-danger mb-2">PROJECT 13</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 14 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="portfolio-item bg-white border">
+                    <img src="{{ url_for('static', filename='images/fourteen.jpeg') }}" alt="Project 14" class="portfolio-img">
+                    <div class="portfolio-overlay text-white">
+                        <span class="badge bg-danger mb-2">PROJECT 14</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 15 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="portfolio-item bg-white border">
+                    <img src="{{ url_for('static', filename='images/fifteen.jpeg') }}" alt="Project 15" class="portfolio-img">
+                    <div class="portfolio-overlay text-white">
+                        <span class="badge bg-danger mb-2">PROJECT 15</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     {% endif %}
